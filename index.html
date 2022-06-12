@@ -180,28 +180,28 @@
                         <h2>CODE EXAMPLE</h2>
                     </span>
                 </div>
-                <div class="codeExample">
-                        <code>
-                        bs4 import BeautifulSoup
-                        <br>from Request import get_html, get_response
-                        <br>def pars_info(html_data):
-                        <br>
-                        <br>soup = BeautifulSoup(html_data, 'html.parser')
-                        <br>cards_company = soup.find_all('div', class_='cart-company-lg')
-                        
-                        <br><pre>dict_keys = [&quot;Название&quot;, &quot;Сайт&quot;, &quot;Почта&quot;, &quot;Телефон&quot;,
-                            &quot;Вид деятельности&quot;]</pre>
-                        data_base = []
-                        <br>    
-                        <pre>for card in cards_company:
-                            data_company = {}
-                            dict_value = []</pre>
-                                
-                        <br>mail = card.find('a', target=&quot;_blank&quot;, rel=None)
-                        <br>site = card.find('a', rel=&quot;nofollow&quot;, target=&quot;_blank&quot;)
-                        </code>
-                </div>
-            </a>
+             </a>
+            <div class="codeExample">
+                    <code>
+                    bs4 import BeautifulSoup
+                    <br>from Request import get_html, get_response
+                    <br>def pars_info(html_data):
+                    <br>
+                    <br>soup = BeautifulSoup(html_data, 'html.parser')
+                    <br>cards_company = soup.find_all('div', class_='cart-company-lg')
+                    
+                    <br><pre>dict_keys = [&quot;Название&quot;, &quot;Сайт&quot;, &quot;Почта&quot;, &quot;Телефон&quot;,
+                        &quot;Вид деятельности&quot;]</pre>
+                    data_base = []
+                    <br>    
+                    <pre>for card in cards_company:
+                        data_company = {}
+                        dict_value = []</pre>
+                            
+                    <br>mail = card.find('a', target=&quot;_blank&quot;, rel=None)
+                    <br>site = card.find('a', rel=&quot;nofollow&quot;, target=&quot;_blank&quot;)
+                    </code>
+            </div>   
             <a name="education">
                 <div class="title">
                     <span>
