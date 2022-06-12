@@ -1,3 +1,11 @@
+:root {
+    --text-color: black;
+    --header-bg-color: white;
+    --contentLeft-bg-color: #f7d9b9;
+    --contentRight-bg-color: #fafafa;
+    --other-color: #c8cca8;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -7,27 +15,73 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+p {
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
 a {
-    color: black;
+    color: var(--text-color);
     text-decoration: none;
 }
 
-ul {
+h1,
+h2,
+h3 {
+    font-family: 'Oxygen', sans-serif;
+}
+
+h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin: 10px auto;
+}
+
+ul,
+ol {
     padding-left: 0;
 }
 
 li {
     list-style: none;
+    margin: 10px 0px;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header {
-    background-color: white;
+    background-color: var(--header-bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+}
+
+.material-symbols-outlined {
+    color: var(--other-color);
+    vertical-align: middle;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.nav {
+    width: 100%;
 }
 
 .nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
 }  
 
 .main {
@@ -38,22 +92,26 @@ li {
 .contentLeft {
     display: flex;
     flex-direction: column;
-    background-color: #f7d9b9;
+    background-color: var(--contentLeft-bg-color);
     min-height: 100px;
     width: 30%;
+    min-width: 244px;
     padding: 20px;
+    border-radius: 30px;
 }
 
 .contentRight {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background-color: #fafafa;
+    background-color: var(--contentRight-bg-color);
     width: 80%;
+    border-radius: 30px;
 }
 
 .photo {
     align-self: center;
+    margin: 20px;
 }
 
 .photo img{
@@ -62,9 +120,21 @@ li {
     border-radius: 100px;
 }
 
+.contacts {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 .skills {
     display: flex;
     flex-direction: column;
+    margin: 10px 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.profile {
+    margin: 10px 15px;
+    text-align: justify;
 }
 
 .container{
@@ -89,20 +159,23 @@ li {
     width: 12px;
     height: 12px;
     margin: 2px 1px;
-    background-color: #fafafa;
+    background-color: var(--contentRight-bg-color);
     border-radius: 6px;
 }
 
 .progressBlock.active {
-    background-color: #c8cca8;
+    background-color: var(--other-color);
 }
 
 .name {
     text-align: center;
     font-size: 30px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: inline-block
-    
+    display: inline-block  
+}
+
+.name h1 {
+    margin: 0;
 }
 
 .title {
@@ -115,11 +188,33 @@ li {
 }
 
 .firstname {
-    color: #c8cca8;
+    color: var(--other-color);
 }
 
 .lastname {
-    color: #f7d9b9;
+    color: var(--contentLeft-bg-color);
+}
+
+.position {
+    text-align: center;
+    font-size: 15px;
+    color: var(--other-color);
+}
+
+.position h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.experientceLink {
+    vertical-align: middle;
+}
+
+.githublink {
+    width: 15px;
+    height: 15px;
+    margin: 0px 5px;
 }
 
 .title::before,
@@ -129,7 +224,7 @@ li {
     vertical-align: middle;
     width: 100%;
     height: 3px;
-    background-color: #c8cca8;
+    background-color: var(--other-color);
     position: relative;
 }
 
@@ -145,11 +240,20 @@ li {
 
 .experientce li {
     list-style-type: decimal;
+    margin-left: 35px;
+    margin-right: 15px;
 }
 
 .codeExample {
     width: 70%;
     align-self: center;
+    margin: 10px 0;
+}
+
+.education {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
 }
 
 .twoColumnsContent {
@@ -174,8 +278,21 @@ li {
 
 .languages,
 .computer {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.computerBlock {
+    display: flex;
+}
+
+.computer.right {
+    width: 50%;
+}
+
+.computer.left {
+    width: 50%;
 }
 
 .footer {
@@ -200,5 +317,4 @@ li {
 .logo {
     height: 60%;
     margin-left: auto;
-    margin-right: 5%;
 }
