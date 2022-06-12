@@ -1,9 +1,9 @@
 :root {
     --text-color: black;
     --header-bg-color: white;
-    --contentLeft-bg-color: #f7d9b9;
+    --contentLeft-bg-color: #dbc5b0;
     --contentRight-bg-color: #fafafa;
-    --other-color: #c8cca8;
+    --other-color: #334858;
 }
 
 body {
@@ -30,6 +30,7 @@ h1,
 h2,
 h3 {
     font-family: 'Oxygen', sans-serif;
+    color: var(--other-color);
 }
 
 h1 {
