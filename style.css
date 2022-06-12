@@ -61,6 +61,42 @@ li {
     width: 200px;
     border-radius: 100px;
 }
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    margin: 4px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.label,
+.progressBar,
+.progressBlock {
+    float: left;
+}
+
+.label {
+    margin-right: 10px;
+}
+
+
+.progressBlock {
+    width: 12px;
+    height: 12px;
+    margin: 2px 1px;
+    background-color: #fafafa;
+    border-radius: 6px;
+}
+
+.progressBlock.active {
+    background-color: #c8cca8;
+}
+
 .name {
     text-align: center;
     font-size: 30px;
