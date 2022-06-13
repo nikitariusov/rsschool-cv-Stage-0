@@ -322,6 +322,9 @@ li {
 }
 
 .logo {
-    height: 60%;
     margin-left: auto;
+}
+
+.rssLogo {
+ height: 30px;
 }
