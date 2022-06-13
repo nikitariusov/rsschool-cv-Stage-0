@@ -90,6 +90,11 @@ li {
     flex-direction: row;
 }
 
+.nameSmollscreen,
+.positionSmollscreen {
+    display: none;
+}
+
 .contentLeft {
     display: flex;
     flex-direction: column;
@@ -328,3 +333,74 @@ li {
 .rssLogo {
  height: 30px;
 }
+
+@media (max-width: 735px) {
+    .nav ul {
+        flex-wrap: wrap;
+    }
+
+    .nav li {
+        margin: 5px 10px;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nameSmollscreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    }
+
+    .nameSmollscreen h1 {
+        margin-bottom: 0;
+        margin-top: 10px;
+        font-size: 50px;
+    }
+
+    .positionSmollscreen {
+        display: contents;
+    }
+
+    .positionSmollscreen h2 {
+        margin-top: 0;
+    }
+
+    .name,
+    .position {
+        display: none;
+    }
+
+    .contentLeft,
+    .contentRight {
+        width: 90%;
+    }
+
+    .photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    @media (max-width: 525px) {
+        .twoColumnsContent {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .languagesColumn,
+        .computerColumn {
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+
+    }
+}   
