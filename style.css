@@ -179,15 +179,6 @@ li {
     margin: 0;
 }
 
-.title {
-    overflow: hidden;
-    text-align: center;
-}
-.title span {
-    display: inline-block;
-    vertical-align: middle;
-}
-
 .firstname {
     color: var(--other-color);
 }
@@ -216,6 +207,21 @@ li {
     width: 15px;
     height: 15px;
     margin: 0px 5px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.title span {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .title::before,
