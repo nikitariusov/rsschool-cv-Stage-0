@@ -180,13 +180,13 @@
                     <br>soup = BeautifulSoup(html_data, 'html.parser')
                     <br>cards_company = soup.find_all('div', class_='cart-company-lg')
                     
-                    <br><pre>dict_keys = [&quot;Название&quot;, &quot;Сайт&quot;, &quot;Почта&quot;, &quot;Телефон&quot;,
-                        &quot;Вид деятельности&quot;]</pre>
+                    <br>dict_keys = [&quot;Название&quot;, &quot;Сайт&quot;, &quot;Почта&quot;, &quot;Телефон&quot;,
+                        &quot;Вид деятельности&quot;]
                     data_base = []
                     <br>    
-                    <pre>for card in cards_company:
-                        data_company = {}
-                        dict_value = []</pre>
+                    for card in cards_company:
+                    data_company = {}
+                    dict_value = []
                             
                     <br>mail = card.find('a', target=&quot;_blank&quot;, rel=None)
                     <br>site = card.find('a', rel=&quot;nofollow&quot;, target=&quot;_blank&quot;)
@@ -208,19 +208,17 @@
                 <div class="languagesColumn">
                     <a id="languages">
                         <div class="title">
-                            <span>
-                                <h2>LANGUAGES</h2>
-                            </span>
+                            <h2>LANGUAGES</h2>
                         </div>
                         <div class="languages">
                             <p>English Elementary (A2)</p>
                             <p>Ukrainian (fluency)</p>
                             <p>russian (fluency)</p>
-                        </div>    
-                    </div>
-                </a>
+                        </div>
+                    </a>
+                </div>
                 <div class="computerColumn">
-                    <a name="computer">
+                    <a id="computer">
                         <div class="title">
                             <h2>COMPUTER</h2>
                         </div> 
@@ -236,14 +234,13 @@
                             <p>Blender 3D</p>
                             <p>Photoshop</p>
                         </div>       
-                    </div>
-                    
+                    </div>   
                 </div>       
             </div>      
         </div>
     </main>
     <footer class="footer">
-        <span class="copy"><b>&copy 2022</b></span>
+        <span class="copy"><b>&copy; 2022</b></span>
         <a class="mygit" href="https://github.com/nikitariusov/">
             <img class="githubLogo" src="src/images/github-logo.png" alt="GithubLogo">
             <div class="textLink">nikitariusov</div></a>
