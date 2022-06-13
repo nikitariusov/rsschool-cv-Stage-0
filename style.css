@@ -85,6 +85,10 @@ li {
     font-weight: 700;
 }  
 
+.nav li a {
+    color: var(--other-color);
+}
+
 .main {
     display: flex;
     flex-direction: row;
