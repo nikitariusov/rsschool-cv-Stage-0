@@ -339,6 +339,10 @@ li {
 }
 
 @media (max-width: 735px) {
+    body {
+        min-width: 400px;
+    }
+    
     .nav ul {
         flex-wrap: wrap;
     }
