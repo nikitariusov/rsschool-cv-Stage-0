@@ -1,2 +1,2 @@
-https://nikitariusov.github.io/rsschool-cv/cv
-https://nikitariusov.github.io/rsschool-cv/
+https://nikitariusov.github.io/rsschool-cv-Stage-0/cv
+https://nikitariusov.github.io/rsschool-cv-Stage-0/
